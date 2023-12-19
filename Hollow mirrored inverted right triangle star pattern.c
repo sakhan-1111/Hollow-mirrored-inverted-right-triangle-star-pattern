@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int i, j, r;
+    printf("Enter number of rows: ");
+    scanf("%d", &r);
+ 
+    for(i=1; i<=r; i++)
+    {
+        for(j=1; j<i; j++)
+        {
+            printf(" ");
+        }
+        for(j=i; j<=r; j++)
+        {
+            if(j==i || j==r || i==1)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+} 
